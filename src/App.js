@@ -14,7 +14,7 @@ function App() {
         <img className="pdf-logo" src={ require('./asset/pdf-logo.png') } alt="pdf logo"/>
         <br/>
       </a>
-      <a >View Resume</a>
+      <a >Resume</a>
 
     </div>
   );
