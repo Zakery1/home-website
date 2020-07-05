@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="special">Zachary Graham</h1>
-      <a href={pdf} target="_blank" >
+      <a href={pdf} rel="noopener noreferrer" target="_blank" >
         <img className="pdf-logo" src={ require('./asset/pdf-logo.png') } alt="pdf logo"/>
         <br/>
       </a>
