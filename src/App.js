@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import pdf from "./document/resume.pdf";
 import { Link } from "react-router-dom";
 import HomeIcon from "@material-ui/icons/Home";
 
@@ -9,19 +8,18 @@ import MicIcon from "@material-ui/icons/Mic";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import DescriptionIcon from "@material-ui/icons/Description";
 
-import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
+
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import MailIcon from "@material-ui/icons/Mail";
+
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -81,13 +79,13 @@ function App() {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-      <Link className={classes.link} to="/">
-        <ListItem button>
-          <ListItemIcon>
-            <HomeIcon />
-          </ListItemIcon>
-          <ListItemText primary={"Home"} />
-        </ListItem>
+        <Link className={classes.link} to="/">
+          <ListItem button>
+            <ListItemIcon>
+              <HomeIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Home"} />
+          </ListItem>
         </Link>
 
         <Link className={classes.link} to="/Resume">
@@ -98,7 +96,7 @@ function App() {
             <ListItemText primary={"Resume"} />
           </ListItem>
         </Link>
-        
+
         <Link className={classes.link} to="/Calendar">
           <ListItem button>
             <ListItemIcon>
@@ -108,20 +106,20 @@ function App() {
           </ListItem>
         </Link>
         <Link className={classes.link} to="/Podcast">
-        <ListItem button>
-          <ListItemIcon>
-            <MicIcon />
-          </ListItemIcon>
-          <ListItemText primary={"Podcast"} />
-        </ListItem>
+          <ListItem button>
+            <ListItemIcon>
+              <MicIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Podcast"} />
+          </ListItem>
         </Link>
         <Link className={classes.link} to="/Photography">
-        <ListItem button>
-          <ListItemIcon>
-            <CameraAltIcon />
-          </ListItemIcon>
-          <ListItemText primary={"Photography"} />
-        </ListItem>
+          <ListItem button>
+            <ListItemIcon>
+              <CameraAltIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Photography"} />
+          </ListItem>
         </Link>
       </List>
       <Divider />
