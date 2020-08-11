@@ -1,5 +1,6 @@
 import React from "react";
-import pdf from '../document/resume.pdf'
+import pdf from '../../document/resume.pdf';
+import './Resume.scss'
 
 function Resume() {
   return (
@@ -7,7 +8,7 @@ function Resume() {
       <a href={pdf} rel="noopener noreferrer" target="_blank">
         <img
           className="pdf-logo"
-          src={require("../asset/pdf-logo.png")}
+          src={require("../../asset/pdf-logo.png")}
           alt="pdf logo"
         />
         <br />

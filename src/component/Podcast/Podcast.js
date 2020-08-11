@@ -7,7 +7,7 @@ function Podcast() {
     <div>
       <img
         className="zg-podcast-logo"
-        src={require("../asset/podcast-logo.jpg")}
+        src={require("../../asset/podcast-logo.jpg")}
         alt="podcast-logo"
       ></img>
       <br />

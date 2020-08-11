@@ -4,7 +4,7 @@ import './Home.scss';
 function Home() {
   return (
     <div>
-      <img className="zg-headshot" src={require("../asset/zachary-headshot.png")} alt="zg-headshot"></img>
+      <img className="zg-headshot" src={require("../../asset/zachary-headshot.png")} alt="zg-headshot"></img>
     </div>
   );
 }
