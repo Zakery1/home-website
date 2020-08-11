@@ -7,7 +7,7 @@ function Resume() {
     <div>
       <a href={pdf} rel="noopener noreferrer" target="_blank">
         <img
-          className="pdf-logo"
+          className="zg-pdf-logo"
           src={require("../../asset/pdf-logo.png")}
           alt="pdf logo"
         />
