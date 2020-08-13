@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./Calendar.scss";
 
 function Calendar() {
   useEffect(() => {
@@ -12,11 +13,13 @@ function Calendar() {
   });
 
   return (
-    <div
-      className="calendly-inline-widget"
-      data-url={"https://calendly.com/zakgraham"}
-      style={{ minWidth: "320px", height: "630px" }}
-    ></div>
+    <div className="zg-iframe-holder">
+      <div
+        className="calendly-inline-widget"
+        data-url={"https://calendly.com/zakgraham"}
+        style={{ minWidth: "320px", height: "630px" }}
+      ></div>
+    </div>
   );
 }
 
