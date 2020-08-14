@@ -1,6 +1,8 @@
 import React from "react";
 import "./Sidebar.scss";
 
+import variables from "../../scss/variables.scss";
+
 import { Link } from "react-router-dom";
 import HomeIcon from "@material-ui/icons/Home";
 
@@ -31,6 +33,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
+    marginTop: "90px",
   },
   drawer: {
     [theme.breakpoints.up("sm")]: {
@@ -49,8 +52,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
+    color: "white",
   },
-  // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
@@ -81,44 +84,57 @@ function App() {
       <List>
         <Link className={classes.link} to="/">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon style={{ color: variables.main }}>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary={"Home"} />
+            <ListItemText style={{ color: variables.main }} primary={"Home"} />
           </ListItem>
         </Link>
 
         <Link className={classes.link} to="/Resume">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon style={{ color: variables.main }}>
               <DescriptionIcon />
             </ListItemIcon>
-            <ListItemText primary={"Resume"} />
+            <ListItemText
+              style={{ color: variables.main }}
+              primary={"Resume"}
+            />
           </ListItem>
         </Link>
 
         <Link className={classes.link} to="/Calendar">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon style={{ color: variables.main }}>
               <CalendarTodayIcon />
             </ListItemIcon>
-            <ListItemText primary={"Schedule a Meeting"} />
+            <ListItemText
+              style={{ color: variables.main }}
+              t
+              primary={"Schedule a Meeting"}
+            />
           </ListItem>
         </Link>
         <Link className={classes.link} to="/Podcast">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon style={{ color: variables.main }}>
               <MicIcon />
             </ListItemIcon>
-            <ListItemText primary={"Podcast"} />
+            <ListItemText
+              style={{ color: variables.main }}
+              primary={"Podcast"}
+            />
           </ListItem>
         </Link>
         <Link className={classes.link} to="/Photography">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon style={{ color: variables.main }}>
               <CameraAltIcon />
             </ListItemIcon>
-            <ListItemText primary={"Photography"} />
+            <ListItemText
+              style={{ color: variables.main }}
+              primary={"Photography"}
+            />
           </ListItem>
         </Link>
       </List>
@@ -127,14 +143,12 @@ function App() {
   );
 
   return (
-    <div className="App">
-      <h1 className="special">Zachary Graham</h1>
+    <div>
       <div className={classes.root}>
         <CssBaseline />
         <AppBar position="fixed" className={classes.appBar}>
-          <Toolbar>
+          <Toolbar style={{ background: variables.main }}>
             <IconButton
-              color="inherit"
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
@@ -147,11 +161,9 @@ function App() {
             </Typography>
           </Toolbar>
         </AppBar>
-        <nav className={classes.drawer} aria-label="mailbox folders">
-          {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+        <nav className={classes.drawer}>
           <Hidden smUp implementation="css">
             <Drawer
-              // container={container}
               variant="temporary"
               anchor={theme.direction === "rtl" ? "right" : "left"}
               open={mobileOpen}
@@ -160,7 +172,7 @@ function App() {
                 paper: classes.drawerPaper,
               }}
               ModalProps={{
-                keepMounted: true, // Better open performance on mobile.
+                keepMounted: true,
               }}
             >
               {drawer}
