@@ -5,8 +5,6 @@ import PhotoModal from "./modal/PhotoModal";
 
 import './Photography.scss';
 
-import bigClouds from "../../asset/photography/bigclouds.jpg";
-
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
@@ -17,7 +15,7 @@ const useStyles = makeStyles({
 });
 
 function Photography() {
-  const classes = useStyles();
+  useStyles();
   return (
     <div>
       <PhotoModal />

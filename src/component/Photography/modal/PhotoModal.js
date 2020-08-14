@@ -3,7 +3,15 @@ import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
 
-import bigClouds from "../../../asset/photography/bigclouds.jpg";
+import {
+  BigClouds,
+  Camelback,
+  Chuckwalla,
+  EchoCanyon,
+  RedMountain,
+  ScottsdaleSnow,
+  Sunset,
+} from "../../../asset/photography";
 
 import "./PhotoModal.scss";
 
@@ -11,8 +19,46 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+const photoArray = [
+  BigClouds,
+  Camelback,
+  Chuckwalla,
+  EchoCanyon,
+  RedMountain,
+  ScottsdaleSnow,
+  Sunset,
+];
+
 export default function AlertDialogSlide() {
   const [open, setOpen] = React.useState(false);
+
+  const photos = photoArray.map((photo) => {
+    return (
+      <div key={photo.toString()} className="zg-photos-container">
+        <img style={{marginTop: "20px"}}
+          onClick={handleClickOpen}
+          className="zg-page-photo"
+          src={photo}
+          alt="nature"
+        />
+
+        <Dialog
+          open={open}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={handleClose}
+          maxWidth={false}
+        >
+          <img
+            onClick={handleClickOpen}
+            className="zg-photo-modal"
+            src={photo}
+            alt="nature"
+          />
+        </Dialog>
+      </div>
+    );
+  });
 
   function handleClickOpen() {
     setOpen(true);
@@ -22,30 +68,5 @@ export default function AlertDialogSlide() {
     setOpen(false);
   }
 
-  return (
-    <div>
-      <img
-        onClick={handleClickOpen}
-        className="zg-page-photo"
-        src={bigClouds}
-        alt="nature photo"
-      />
-
-      <Dialog
-        open={open}
-        TransitionComponent={Transition}
-        keepMounted
-        onClose={handleClose}
-        maxWidth="false"
-        maxHeight="false"
-      >
-        <img
-          onClick={handleClickOpen}
-          className="zg-photo-modal"
-          src={bigClouds}
-          alt="nature photo"
-        />
-      </Dialog>
-    </div>
-  );
+  return <div> {photos}</div>;
 }

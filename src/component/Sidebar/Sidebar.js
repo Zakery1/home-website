@@ -110,7 +110,6 @@ function App() {
             </ListItemIcon>
             <ListItemText
               style={{ color: variables.main }}
-              t
               primary={"Schedule a Meeting"}
             />
           </ListItem>
