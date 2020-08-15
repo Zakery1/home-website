@@ -7,13 +7,13 @@ import Paper from "@material-ui/core/Paper";
 function Resume() {
   return (
     <div>
-      <Paper className="zg-resume-paper">
-        <p>Almost before we knew it, we had left the ground.</p>
-        <p>Experience</p>
-        <p>Other experience</p>
-        <p>Npm Modules</p>
-        <p>Education</p>
-      </Paper>
+      <ul className="zg-resume-paper">
+        <li>Tech</li>
+        <li>Experience</li>
+        <li>Other experience</li>
+        <li>Npm Modules</li>
+        <li>Education</li>
+      </ul>
       <a href={pdf} rel="noopener noreferrer" target="_blank">
         <img
           className="zg-pdf-logo"
