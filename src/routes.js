@@ -10,11 +10,11 @@ import Home from './component/Home/Home';
 export default function routes() {
   return (
     <Switch>
-      <Route path="/Calendar" component={withRouter(Calendar)} />
+      {/* <Route path="/Calendar" component={withRouter(Calendar)} />
       <Route path="/Resume" component={Resume} />
       <Route path="/Podcast" component={Podcast} />
-      <Route path="/Photography" component={Photography} />
-      <Route exact path="/" component={Home} />
+      {/* <Route path="/Photography" component={Photography} /> */}
+      {/* <Route exact path="/" component={Home} /> */} */}
     </Switch>
   );
 }

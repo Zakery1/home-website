@@ -1,19 +1,30 @@
-.zg-headshot {
-  height: 300px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  height: 150px;
-  width: 150px;
+.zg-home-container {
+  background: rgb(39, 39, 39);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .zg-headshot {
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    height: 250px;
+    width: 250px;
+    margin: 30px 0 30px 0;
+  }
+  
+  .zg-home-description {
+    margin: 0 40px 0 40px;
+  }
 }
 
-.zg-home-paper {
-  margin: 0 40px 0 40px;
-}
+
+
 
 @media only screen and (min-width: 400px) {
+  .zg-home-container {
   .zg-headshot {
     height: 350px;
     width: 350px;
   }
+}
 }

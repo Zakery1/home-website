@@ -25,17 +25,14 @@ const photoArray = [
 export default function Photography() {
   const photos = photoArray.map((photo) => {
     return (
-      <div key={photo.toString()} className="zg-photos-container">
-        <img
-          style={{ marginTop: "20px" }}
-          className="zg-page-photo"
-          src={photo}
-          alt="nature"
-        />
+      <div key={photo.toString()} className="zg-photos">
+        <img className="zg-photo" src={photo} />
       </div>
     );
   });
 
-  return <div> {photos}</div>;
+  return <div className="zg-photography-container">
+    <h2 className="zg-photography-header">Photography</h2>
+    {photos}
+    </div>;
 }
-

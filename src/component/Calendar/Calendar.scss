@@ -1,3 +1,28 @@
-.zg-iframe-holder {
-  background: url(../../asset/spinner.gif) center center no-repeat;
+.zg-calendar-container {
+  background-color: rgb(39, 39, 39);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .zg-calendar-header {
+    // padding-top: 50px;
+  }
+
+  .calendly-inline-widget {
+    height: 500px;
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .zg-calendar-container {
+    height: 900px;
+    .zg-calendar-header {
+    }
+
+    .calendly-inline-widget {
+      height: 1000px;
+      width: 900px;
+    }
+  }
 }

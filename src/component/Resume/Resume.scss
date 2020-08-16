@@ -1,15 +1,49 @@
-.zg-pdf-logo {
-  width: 50px;
-}
+.zg-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 20px 0;
 
-.zg-resume-paper {
-  margin: 0 40px 0 40px;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
+  .zg-resume-header {
+  }
+  .zg-knowledge-container {
+    display: flex;
+    flex-direction: row;
+    .zg-knowledge-column {
+      margin: 4px 15px;
+    }
+  }
+
+  .zg-resume-link {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+  }
+  .zg-resume-link:visited {
+    text-decoration: none;
+    color: white;
+  }
+  .zg-resume-link:hover {
+    text-decoration: none;
+    color: white;
+  }
+  .zg-resume-link:focus {
+    text-decoration: none;
+    color: white;
+  }
+  .zg-resume-link:hover,
+  .zg-resume-link:active {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 @media only screen and (min-width: 400px) {
-  .zg-pdf-logo {
-    width: 100px;
+  .zg-resume {
+    .zg-knowledge-container {
+      .zg-knowledge-column {
+        margin: 4px 70px;
+      }
+    }
   }
 }

@@ -13,11 +13,11 @@ function Calendar() {
   });
 
   return (
-    <div className="zg-iframe-holder">
+    <div className="zg-calendar-container">
+      <h2 className="zg-calendar-header">Schedule a Meeting</h2>
       <div
         className="calendly-inline-widget"
         data-url={"https://calendly.com/zakgraham"}
-        style={{ minWidth: "320px", height: "630px" }}
       ></div>
     </div>
   );

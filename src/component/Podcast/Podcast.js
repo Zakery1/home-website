@@ -4,7 +4,8 @@ import Button from '@material-ui/core/Button';
 
 function Podcast() {
   return (
-    <div>
+    <div className="zg-podcast-container">
+      <h2>Podcast</h2>
       <img
         className="zg-podcast-logo"
         src={require("../../asset/podcast-logo.jpg")}

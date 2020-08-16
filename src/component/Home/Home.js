@@ -3,10 +3,10 @@ import './Home.scss';
 
 function Home() {
   return (
-    <div>
+    <header className="zg-home-container">
       <img className="zg-headshot" src={require("../../asset/zachary-headshot.png")} alt="zg-headshot"></img>
-      <p className="zg-home-paper">Hi, I'm Zak.</p>
-    </div>
+      <p className="zg-home-description">Hi, I'm Zak.</p>
+    </header>
   );
 }
 
