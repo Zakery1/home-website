@@ -10,31 +10,31 @@
     display: flex;
     flex-direction: row;
     .zg-knowledge-column {
-      margin: 4px 15px;
+      margin: 4px 10px;
     }
   }
 
   .zg-resume-link {
     text-decoration: none;
-      color: rgb(162, 160, 160);
+      color: rgb(235, 233, 233);
     margin: 20px;
   }
   .zg-resume-link:visited {
     text-decoration: none;
-      color: rgb(162, 160, 160);
+      color: rgb(235, 233, 233);
   }
   .zg-resume-link:hover {
     text-decoration: none;
-      color: rgb(162, 160, 160);
+      color: rgb(235, 233, 233);
   }
   .zg-resume-link:focus {
     text-decoration: none;
-      color: rgb(162, 160, 160);
+      color: rgb(235, 233, 233);
   }
   .zg-resume-link:hover,
   .zg-resume-link:active {
     text-decoration: none;
-      color: rgb(162, 160, 160);
+      color: rgb(235, 233, 233);
   }
 }
 
