@@ -13,8 +13,8 @@ function Resume() {
             <li>Angular</li>
             <li>.NET</li>
             <li>NodeJS</li>
-            <li>Javascript</li>
-            <li>Typescript</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>Netlify</li>
             <li>AWS</li>
             <li>C#</li>

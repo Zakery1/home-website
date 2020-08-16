@@ -15,12 +15,16 @@ function Home() {
       </p>
       <br />
       <div className="zg-link-holder">
-        <a className="zg-link" href="github.com/zakery1">
-          Github
-        </a>
         <a className="zg-link" href="https://www.linkedin.com/in/zakgraham/">
           LinkedIn
         </a>
+        <a className="zg-link" href="github.com/zakery1">
+          Github
+        </a>
+        <a className="zg-link" href="https://github.com/Zakery1/home-website">
+          Site Repository
+        </a>
+        <br />
       </div>
     </header>
   );
