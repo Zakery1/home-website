@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   .zg-calendar-header {
-    // padding-top: 50px;
+    padding-top: 20px;
   }
 
   .calendly-inline-widget {
@@ -18,10 +18,11 @@
   .zg-calendar-container {
     height: 900px;
     .zg-calendar-header {
+      margin-bottom: 0;
     }
 
     .calendly-inline-widget {
-      height: 1000px;
+      height: 810px;
       width: 900px;
     }
   }
