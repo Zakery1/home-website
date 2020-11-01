@@ -13,7 +13,7 @@ function Podcast() {
       ></img>
       <br />
       <br />
-      <Button variant="contained" className="zg-podcast-link" target="_blank" href="https://stage-18.netlify.app/">
+      <Button variant="contained" className="zg-podcast-link" target="_blank" href="https://stage18podcast.com/">
         Visit Podcast Homepage
       </Button>
     </div>
