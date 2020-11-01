@@ -18,11 +18,15 @@ function Resume() {
             <li>Netlify</li>
             <li>AWS</li>
             <li>C#</li>
-            <li>HTML</li>
+            <li>HTML5</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
           </div>
           <div className="zg-knowledge-column">
+            <li>Heroku</li>
+            <li>Atlas</li>
             <li>CSS</li>
-            <li>SASS/SCSS</li>
+            <li>SASS</li>
             <li>Material UI</li>
             <li>Java</li>
             <li>PHP</li>

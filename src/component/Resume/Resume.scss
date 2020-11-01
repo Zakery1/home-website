@@ -1,23 +1,17 @@
 .zg-resume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0 20px 0;
 
   .zg-resume-header {
   }
   .zg-knowledge-container {
-    display: flex;
-    flex-direction: row;
+
     .zg-knowledge-column {
-      margin: 4px 10px;
+
     }
   }
 
   .zg-resume-link {
     text-decoration: none;
       color: rgb(235, 233, 233);
-    margin: 20px;
   }
   .zg-resume-link:visited {
     text-decoration: none;
@@ -42,7 +36,6 @@
   .zg-resume {
     .zg-knowledge-container {
       .zg-knowledge-column {
-        margin: 4px 70px;
       }
     }
   }
