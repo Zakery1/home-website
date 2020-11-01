@@ -18,20 +18,20 @@ import {
 import "./Photography.scss";
 
 const photoArray = [
-  BigClouds,
-  Camelback,
-  Chuckwalla,
-  EchoCanyon,
-  RedMountain,
-  ScottsdaleSnow,
-  Sunset,
+  "bigclouds",
+  "camelback",
+  "chuckwalla",
+  "echocanyon",
+  "redmountain",
+  "scottsdalesnow",
+  "sunset",
 ];
 
 export default function Photography() {
   const photos = photoArray.map((photo) => {
     return (
       <div key={photo.toString()} className="zg-photos">
-        <img className="zg-photo" src={photo} alt="Zak" />
+        <img className="zg-photo" src={`https://photography-zg.s3-us-west-2.amazonaws.com/${photo}.jpg`} alt="Zak" />
       </div>
     );
   });
