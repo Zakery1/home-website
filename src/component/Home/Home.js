@@ -3,7 +3,7 @@ import "./Home.scss";
 
 function Home() {
   return (
-    <header className="zg-home-container">
+    <div className="zg-home-container">
       <img
         className="zg-headshot"
         src={require("../../asset/zachary-headshot.png")}
@@ -26,7 +26,7 @@ function Home() {
         </a>
         <br />
       </div>
-    </header>
+    </div>
   );
 }
 

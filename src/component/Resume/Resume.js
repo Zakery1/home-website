@@ -4,44 +4,46 @@ import "./Resume.scss";
 
 function Resume() {
   return (
-    <div>
-      <div className="zg-resume">
-        <h2 className="zg-resume-header">I've worked with:</h2>
-        <div className="zg-knowledge-container">
-          <div className="zg-knowledge-column">
-            <li>React</li>
-            <li>Angular</li>
-            <li>.NET</li>
-            <li>NodeJS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Netlify</li>
-            <li>AWS</li>
-            <li>C#</li>
-            <li>HTML5</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-          </div>
-          <div className="zg-knowledge-column">
-            <li>Heroku</li>
-            <li>Atlas</li>
-            <li>CSS</li>
-            <li>SASS</li>
-            <li>Material UI</li>
-            <li>Java</li>
-            <li>PHP</li>
-            <li>PostGreSQL</li>
-            <li>SQL Server</li>
-            <li>MySQL</li>
-            <li>Knockout.js</li>
-            <li>JQuery</li>
-          </div>
+    <div className="zg-resume-container">
+      <h2 className="zg-resume-header">I've worked with:</h2>
+      <div className="zg-knowledge-container">
+        <div className="zg-knowledge-column">
+          <div className="zg-skill">React</div>
+          <div className="zg-skill">Angular</div>
+          <div className="zg-skill">.NET</div>
+          <div className="zg-skill">NodeJS</div>
+          <div className="zg-skill">JavaScript</div>
+          <div className="zg-skill">TypeScript</div>
+          <div className="zg-skill">Netdivfy</div>
+          <div className="zg-skill">AWS</div>
+          <div className="zg-skill">C#</div>
+          <div className="zg-skill">HTML5</div>
+          <div className="zg-skill">MongoDB</div>
+          <div className="zg-skill">Mongoose</div>
         </div>
-        <a className="zg-resume-link" href={pdf} rel="noopener noreferrer" target="_blank">
-          View Resume PDF
-          <br />
-        </a>
+        <div className="zg-knowledge-column">
+          <div className="zg-skill">Heroku</div>
+          <div className="zg-skill">Atlas</div>
+          <div className="zg-skill">CSS</div>
+          <div className="zg-skill">SASS</div>
+          <div className="zg-skill">Material UI</div>
+          <div className="zg-skill">Java</div>
+          <div className="zg-skill">PHP</div>
+          <div className="zg-skill">PostGreSQL</div>
+          <div className="zg-skill">SQL Server</div>
+          <div className="zg-skill">MySQL</div>
+          <div className="zg-skill">Knockout.js</div>
+          <div className="zg-skill">JQuery</div>
+        </div>
       </div>
+      <a
+        className="zg-resume-link"
+        href={pdf}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        View Resume PDF
+      </a>
     </div>
   );
 }
