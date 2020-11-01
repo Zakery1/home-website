@@ -1,6 +1,5 @@
 .zg-calendar-container {
   background-color: rgb(39, 39, 39);
-  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,22 +7,22 @@
     padding-top: 20px;
   }
 
+
   .calendly-inline-widget {
-    height: 500px;
+    height: 283px;
     width: 350px;
   }
 }
 
 @media only screen and (min-width: 400px) {
   .zg-calendar-container {
-    height: 900px;
     .zg-calendar-header {
       margin-bottom: 0;
     }
 
     .calendly-inline-widget {
-      height: 810px;
-      width: 900px;
+      height: 500px;
+      width: 715px;
     }
   }
 }
