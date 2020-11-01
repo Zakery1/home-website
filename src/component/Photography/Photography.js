@@ -5,16 +5,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Carousel } from "react-responsive-carousel";
 
-import {
-  BigClouds,
-  Camelback,
-  Chuckwalla,
-  EchoCanyon,
-  RedMountain,
-  ScottsdaleSnow,
-  Sunset,
-} from "../../asset/photography";
-
 import "./Photography.scss";
 
 const photoArray = [

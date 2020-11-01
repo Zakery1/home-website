@@ -6,7 +6,7 @@ function Home() {
     <div className="zg-home-container">
       <img
         className="zg-headshot"
-        src={require("../../asset/zachary-headshot.png")}
+        src="https://photography-zg.s3-us-west-2.amazonaws.com/zachary-headshot.png"
         alt="zg-headshot"
       ></img>
       <p className="zg-home-description">
