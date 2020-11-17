@@ -1,5 +1,4 @@
 import React from "react";
-import pdf from "../../document/resume.pdf";
 import "./Resume.scss";
 
 function Resume() {
