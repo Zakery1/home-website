@@ -37,7 +37,7 @@ function Resume() {
       </div>
       <a
         className="zg-resume-link"
-        href="https://zg-pdf.s3-us-west-2.amazonaws.com/resume.pdf"
+        href="https://zg-pdf.s3-us-west-2.amazonaws.com/ZGraham-Resume.pdf"
         rel="noopener noreferrer"
         target="_blank"
       >

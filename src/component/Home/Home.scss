@@ -19,12 +19,8 @@
   .zg-link-holder {
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
-    .zg-link {
-      text-decoration: none;
-      color: rgb(230, 230, 230);
-      margin: 0 15px;
-    }
+    margin-bottom: 20px;
+
     .zg-resume-link:visited {
       text-decoration: none;
       color: rgb(230, 230, 230);
@@ -42,6 +38,29 @@
       text-decoration: none;
       color: rgb(230, 230, 230);
     }
+  }
+
+  .zg-link {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    margin: 0 15px;
+    text-align: center;
+  }
+  .zg-live-websites-header {
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin: 5px;
+    margin-bottom: 14px;
+  }
+
+  .zg-live-site {
+    width: 180px;
+    border-radius: 3px;
+    background: #3f3f3f;
+    color: #white;
+    padding: 5px 10px 5px 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
   }
 }
 

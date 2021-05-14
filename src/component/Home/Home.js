@@ -26,6 +26,13 @@ function Home() {
         </a>
         <br />
       </div>
+      <span className="zg-link zg-live-websites-header" href="https://github.com/Zakery1/home-website">
+        Lives sites
+      </span>
+
+      <a className="zg-link zg-live-site" href="https://zg-debates.netlify.app/">ZG-Debates: <br/>Topic Discussion Platform</a>
+      <a className="zg-link zg-live-site" href="https://stage18podcast.com/">Podcast Home Page</a>
+
     </div>
   );
 }
