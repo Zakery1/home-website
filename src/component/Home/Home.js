@@ -30,7 +30,7 @@ function Home() {
         Lives sites
       </span>
 
-      <a className="zg-link zg-live-site" href="https://zg-debates.netlify.app/">ZG-Debates: <br/>Topic Discussion Platform</a>
+      <a className="zg-link zg-live-site" href="https://hyperbolia.com">ZG-Debates: <br/>Topic Discussion Platform</a>
       <a className="zg-link zg-live-site" href="https://stage18podcast.com/">Podcast Home Page</a>
 
     </div>
